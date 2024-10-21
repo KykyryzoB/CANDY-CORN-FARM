@@ -14,7 +14,7 @@ for i,v in ipairs(workspace.CandyCorns:GetChildren()) do
     game:GetService("VirtualInputManager"):SendKeyEvent(true,"W",false,x)
 end
     wait(0.5)
-    
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KykyryzoB/CANDY-CORN-FARM/refs/heads/main/WITHOUT%20AUTOEXEC%20AND%20TOUCHINTEREST.lua"))()
   ]])
 end
 local serverList = {}
