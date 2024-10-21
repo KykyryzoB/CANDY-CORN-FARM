@@ -1,6 +1,4 @@
-local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
-    if teleportFunc then
-        teleportFunc([[
+
 if not game:IsLoaded() then
     game.Loaded:Wait()
 end
@@ -12,10 +10,6 @@ end
 for i,v in ipairs(workspace.CandyCorns:GetChildren()) do
     v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
     game:GetService("VirtualInputManager"):SendKeyEvent(true,"W",false,x)
-end
-    wait(0.5)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/KykyryzoB/CANDY-CORN-FARM/refs/heads/main/WITHOUT%20AUTOEXEC%20AND%20TOUCHINTEREST.lua"))()
-  ]])
 end
 local serverList = {}
 for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
