@@ -2,7 +2,7 @@
 if not game:IsLoaded() then
     game.Loaded:Wait()
 end
-if game.Players.LocalPlayer.Character:FindFirstChild("entered") == nil then
+if not game.Players.LocalPlayer.Character:FindFirstChild("entered") then
     repeat task.wait()
         workspace.Lobby.Teleport1.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
     until game.Players.LocalPlayer.Character:FindFirstChild("entered")
